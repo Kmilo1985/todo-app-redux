@@ -1,1 +1,8 @@
-<p>todo-add works!</p>
+<header class="header">
+    <h1>todos</h1>
+    <input type="text" class="new-todo"
+        placeholder="¿Que quieres hacer?"
+        (keyup.enter)="agregarTodo()"
+        [formControl]="txtIput"
+        autofocus>
+</header>
